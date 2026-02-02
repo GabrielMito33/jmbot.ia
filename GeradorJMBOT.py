@@ -1799,6 +1799,10 @@ async def job_atualizar_historico(context: ContextTypes.DEFAULT_TYPE):
 async def main() -> None:
     # Habilitar o suporte para nested async loops
     nest_asyncio.apply()
+    # Fix: APScheduler (usado pelo JobQueue) só aceita timezones pytz;
+    # get_localzone() pode retornar zoneinfo no Python 3.9+, causando TypeError.
+    import apscheduler.util
+    apscheduler.util.get_localzone = lambda: pytz.UTC
     application = ApplicationBuilder().token(TOKEN).build()
     job_queue = application.job_queue
 
