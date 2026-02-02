@@ -1,0 +1,9 @@
+# Bot Telegram - GeradorJm
+pytz
+python-telegram-bot>=20.0
+nest_asyncio
+requests
+
+# APScheduler mais recente evita o erro "Only timezones from the pytz library are supported"
+# (aceita zoneinfo no Python 3.9+)
+apscheduler>=3.10
