@@ -28,7 +28,7 @@ TOKEN = '7885570198:AAEygg1UP__uLi-nQhq0gEWEFfxqCk-6JrY'
 # ID do canal específico
 CANAL_ID = '-1003745308914'
 # Link para o seu chat
-CHAT_LINK = 'https://t.me/jhonatamsilva'
+CHAT_LINK = 'https://t.me/jhonatam95'
 
 # Dicionário para armazenar as informações dos usuários
 usuarios = {}
@@ -750,7 +750,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         # Usuário VIP ou com token válido, atribuir permissões
         keyboard = [
             [InlineKeyboardButton("🔸Gere Sua LISTA AQUI!🔸", callback_data='voltar')],
-            [InlineKeyboardButton("💰Comprar seu Plano Mensal ou Anual aqui!", url='https://t.me/jhonatamsilva')]
+            [InlineKeyboardButton("💰Comprar seu Plano Mensal ou Anual aqui!", url='https://t.me/jhonatam95')]
         ]
         mensagem = '💸 Bem-vindo VIP! Escolha a PLATAFORMA que você deseja criar sua LISTA Double ou Crash ✅'
     else:
@@ -767,7 +767,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
         keyboard = [
             [InlineKeyboardButton("Peça seu Teste GRATUITO", url='https://t.me/jhonatamsilva')],
-            [InlineKeyboardButton("💰Comprar seu Plano Mensal ou Anual aqui!", url='https://t.me/jhonatamsilva')]
+            [InlineKeyboardButton("💰Comprar seu Plano Mensal ou Anual aqui!", url='https://t.me/jhonatam95')]
         ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
@@ -829,7 +829,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             # Libera o acesso aos botões
             keyboard = [
                 [InlineKeyboardButton("🔸Gere Sua LISTA AQUI!🔸", callback_data='voltar')],
-                [InlineKeyboardButton("Duvidas e Suporte📥", url='https://t.me/jhonatamsilva')]
+                [InlineKeyboardButton("Duvidas e Suporte📥", url='https://t.me/jhonatam95')]
             ]
 
             reply_markup = InlineKeyboardMarkup(keyboard)
